@@ -1,3 +1,18 @@
 body{
     background-color: #343a40fa;
 }
+.form-crud{
+    background: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid grey;
+
+}
+.form-crud:focus{
+    background: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid grey;
+    color: white;
+    
+}
