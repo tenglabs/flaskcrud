@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block body %}
+
+<form action="/" method="POST" >
+
+    <input type="text" name="content" id="content" >
+    <input type="submit" value="Add">
+</form>
+
+{% for task in tasks %}
+<div class="container">
+    <div class="card text-white bg-dark mb-3 mt-5" style="max-width: 188rem;">
+        <div class="card-header">Created at {{ task.date_created.date() }}</div>
+        <div class="card-body">
+          <h5 class="card-title">{{ task.content }}</h5>
+        
+          <a href="#" class="btn btn-sm btn-success">Update</a>
+          <a href="#" class="btn btn-sm btn-danger">Delete</a>
+        </div>
+      </div>
+</div>
+{% endfor %}
+
+{% endblock %}
